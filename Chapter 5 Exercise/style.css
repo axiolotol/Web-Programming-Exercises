@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.video-container {
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 16 / 9;
+}
+
+.youtube-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    z-index: 1;
+}
+
+.poster-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.poster-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Hide the poster when clicked using the :active pseudo-class */
+.poster-overlay:active {
+    display: none;
+}
+
+/* Hide the poster after it's been clicked using the :focus-within on the container */
+.video-container:focus-within .poster-overlay {
+    display: none;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Color Guessing Game</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="bonusStyle.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Main container for the game -->
+    <div class="container">
+        <header>
+            <h1>RGB Color Guessing Game</h1>
+            <!-- Display the RGB value to guess -->
+            <div id="colorToGuess">RGB(255, 255, 255)</div>
+        </header>
+
+        <!-- Game information section -->
+        <div class="game-info">
+            <div id="lives">Lives: <span>3</span></div>
+            <div id="score">Score: <span>0</span></div>
+            <button id="newGame">New Game</button>
+        </div>
+
+        <!-- Color options container -->
+        <div class="color-grid">
+            <!-- Color options will be dynamically generated here -->
+        </div>
+
+        <!-- Result message display -->
+        <div id="message" class="hidden">Choose a color</div>
+        
+        <!-- Game over screen (hidden by default) -->
+        <div id="gameOver" class="hidden">
+            <h2>Game Over!</h2>
+            <p>Your final score: <span id="finalScore">0</span></p>
+            <button id="playAgain">Play Again</button>
+        </div>
+    </div>
+
+    <!-- Link to JavaScript file -->
+    <script src="bonusScript.js"></script>
+</body>
+</html>

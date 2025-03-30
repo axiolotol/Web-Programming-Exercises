@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body styling - Sets background and centers content */
+body {
+    background: linear-gradient(135deg, #4CA1AF, #2C3E50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Main calculator container styling */
+.calculator-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    padding: 35px;
+    width: 100%;
+    max-width: 420px;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Subtle hover effect for calculator container */
+.calculator-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* Heading styling with gradient text */
+h1 {
+    color: #2C3E50;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* Underline effect for heading */
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 3px;
+    background: linear-gradient(to right, #4CA1AF, #2C3E50);
+    border-radius: 2px;
+}
+
+/* Styling for input groups to maintain spacing */
+.input-group {
+    margin-bottom: 25px;
+}
+
+/* Label styling for clarity */
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #2C3E50;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* Input field styling */
+input {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f8f9fa;
+    color: #2C3E50;
+    /* Transition for smooth effect when focusing */
+    transition: all 0.3s;
+}
+
+/* Focus effect for input fields - highlights when selected */
+input:focus {
+    border-color: #4CA1AF; 
+    box-shadow: 0 0 10px rgba(76, 161, 175, 0.3);
+    outline: none;
+    background-color: white;
+}
+
+/* Button styling with gradient */
+button {
+    background: linear-gradient(to right, #4CA1AF, #2C3E50);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Button hover effect with gradient shift */
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Button active/click effect */
+button:active {
+    transform: translateY(1px);
+}
+
+/* Result container styling */
+.result-container {
+    margin-top: 30px;
+    padding: 18px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 5px solid #4CA1AF;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s;
+}
+
+/* Hover effect for result container */
+.result-container:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for result text */
+.result-container p {
+    font-size: 18px;
+    color: #2C3E50;
+}
+
+/* Styling for the actual total cost value */
+#total-cost {
+    font-weight: bold;
+    color: #4CA1AF;
+    font-size: 20px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 480px) {
+    .calculator-container {
+        padding: 25px;
+    }
+    
+    h1 {
+        font-size: 26px;
+    }
+    
+    input, button {
+        padding: 12px;
+    }
+    
+    .result-container {
+        padding: 15px;
+    }
+}

@@ -1,0 +1,25 @@
+#div_A{
+    border-color: #8a2ae1;
+
+    box-shadow: 8px 8px 8px #ff2222;
+}
+
+#div_B{
+    border-color: #00ff01;
+
+    box-shadow: 8px 8px 8px black inset;
+}
+
+#div_C{
+    border-radius: 16px;
+
+    border-color: #fe8c00;
+
+    box-shadow: 0px 0px 0px 8px #0000fe, 0px 0px 0px 16px #fe0000, 0px 0px 0px 24px #008001;
+}
+
+#div_D{
+    border-color: #b22222;
+
+    text-shadow: 4px 4px 1px black;
+}

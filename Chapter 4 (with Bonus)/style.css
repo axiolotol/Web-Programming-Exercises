@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    margin: 0;
+    background-color: #17072b;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-nav {
+    background-color: #17072b;
+    color: white;
+    padding: 20px;
+}
+
+.header-nav h1 {
+    font-family: Tahoma, sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    margin: 2%;
+}
+
+.welcome, .line-up {
+    padding: 2%;
+}
+
+.welcome {
+    flex: 2;
+}
+
+.line-up {
+    flex: 1;
+    background-color: #172d67;
+    color: white;
+}
+
+.welcome h2, .line-up h2 {
+    font-family: Tahoma, sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+    font-size: xx-large;
+}
+
+.welcome-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.line-up ul {
+    list-style-type: none; 
+    padding-left: 0; 
+}
+
+.line-up li::before {
+    content: "- "; 
+}
+
+.line-up-images {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.line-up-images img {
+    width: calc(50% - 5px);
+    height: 200px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #8c15e9;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
