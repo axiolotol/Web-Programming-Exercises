@@ -1,19 +1,31 @@
 <!DOCTYPE html>
+<!-- 
+    Arcane Cast Page - Voice actors and creative team
+    Consistent structure with main index page
+-->
 <html lang="en">
 <head>
+    <!-- Character encoding and responsive viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title with site section -->
     <title>Arcane | Cast</title>
+    
+    <!-- CSS using relative path to account for subdirectory -->
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
+    <!-- Consistent header with navigation -->
     <header>
         <h1 class="arcane-title">ARCANE</h1>
         <nav>
             <ul>
+                <!-- Note the relative paths for subdirectory navigation -->
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="plot.html">Plot</a></li>
                 <li><a href="info.html">Info</a></li>
+                <!-- Active state for current page -->
                 <li><a href="cast.html" class="active">Cast</a></li>
                 <li><a href="characters.html">Characters</a></li>
                 <li><a href="reviews.html">Reviews</a></li>
@@ -21,13 +33,16 @@
         </nav>
     </header>
 
+    <!-- Main content section -->
     <main>
         <section class="content">
             <h2 class="arcane-title">Voice Cast & Creative Team</h2>
             
+            <!-- Main cast section with semantic structure -->
             <div class="cast-section">
                 <h3>Main Cast</h3>
                 <ul class="cast-list">
+                    <!-- Each actor with semantic span for styling -->
                     <li>
                         <span class="actor">Hailee Steinfeld as Violet(Vi)</span>
                     </li>
@@ -58,6 +73,7 @@
                 </ul>
             </div>
             
+            <!-- Supporting cast section -->
             <div class="cast-section">
                 <h3>Supporting Cast</h3>
                 <ul class="cast-list">
@@ -74,12 +90,6 @@
                         <span class="actor">Brett Tucker as Singed</span>
                     </li>
                     <li>
-                        <span class="actor">Miles Brown as Young Ekko</span>
-                    </li>
-                    <li>
-                        <span class="actor">Mira Furlan as Councilor Shoola</span>
-                    </li>
-                    <li>
                         <span class="actor">Yuri Lowenthal as Mylo</span>
                     </li>
                     <li>
@@ -88,6 +98,7 @@
                 </ul>
             </div>
             
+            <!-- Creative team section -->
             <div class="creative-team">
                 <h3>Creative Team</h3>
                 <ul>
@@ -102,6 +113,7 @@
         </section>
     </main>
 
+    <!-- Consistent footer across all pages -->
     <footer>
         <p>&copy; 2025 Arcane Fan Site | Not affiliated with Riot Games or Netflix</p>
         <p>Visit the <a href="https://arcane.com" target="_blank">Official Arcane Website</a></p>
