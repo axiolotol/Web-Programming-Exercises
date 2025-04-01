@@ -1,16 +1,22 @@
+/* ==================== */
+/* GLOBAL STYLES */
+/* ==================== */
 div {
-    display: inline-block;
-    font-family: sans-serif;
-    font-size: 20px;
-    margin: 25px;
-    border: 4px solid black;
-    line-height: 100px;
-    text-align: center;
-    width: 200px;
-    height: 200px;
-  }
-  
-  body {
-    margin: 100px auto;
-    width: max-content;
-  }
+  display: inline-block; /* Allows divs to be placed side by side */
+  font-family: sans-serif; /* Sets a clean, modern font */
+  font-size: 20px; /* Adjusts text size */
+  margin: 25px; /* Adds space around each div */
+  border: 4px solid black; /* Creates a black border around divs */
+  line-height: 100px; /* Centers text vertically */
+  text-align: center; /* Centers text horizontally */
+  width: 200px; /* Sets fixed width */
+  height: 200px; /* Sets fixed height */
+}
+
+/* ==================== */
+/* BODY STYLES */
+/* ==================== */
+body {
+  margin: 100px auto; /* Centers the body horizontally with vertical spacing */
+  width: max-content; /* Adjusts width based on content size */
+}
