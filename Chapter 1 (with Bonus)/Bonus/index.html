@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta information and character encoding -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Quick Reference Guide</title>
+    <!-- External stylesheet link -->
+    <link rel="stylesheet" href="bonusStyle.css">
+</head>
+<body>
+    <!-- Main container wrapper -->
+    <div class="container">
+        <!-- Header section for page title -->
+        <header>
+            <h1>HTML & CSS Quick Reference Guide</h1>
+            <p>A comprehensive guide to essential HTML tags and CSS properties</p>
+        </header>
+        
+        <!-- Main navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="#html-basics">HTML Basics</a></li>
+                <li><a href="#html-tags">HTML Tags</a></li>
+                <li><a href="#css-basics">CSS Basics</a></li>
+                <li><a href="#css-properties">CSS Properties</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Main content area -->
+        <main>
+            <!-- HTML Basics Section -->
+            <section id="html-basics">
+                <h2>HTML Basics</h2>
+                <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages.</p>
+                
+                <h3>HTML Document Structure</h3>
+                <!-- Example of basic HTML document structure -->
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document Title&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Content goes here --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </section>
+            
+            <!-- HTML Tags Section -->
+            <section id="html-tags">
+                <h2>HTML Tags</h2>
+                <p>HTML tags are the building blocks of HTML pages. Here are some essential HTML tags you should know:</p>
+                
+                <!-- Grid container for HTML tag cards -->
+                <div class="tag-container">
+                    <!-- Heading tags card -->
+                    <div class="tag-card">
+                        <div class="tag-name">&lt;h1&gt; to &lt;h6&gt;</div>
+                        <p>Heading tags define headings of different levels, with h1 being the most important.</p>
+                        <pre><code>&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;h2&gt;Subheading&lt;/h2&gt;
+&lt;h3&gt;Section Heading&lt;/h3&gt;</code></pre>
+                    </div>
+                    
+                    <!-- Paragraph tag card -->
+                    <div class="tag-card">
+                        <div class="tag-name">&lt;p&gt;</div>
+                        <p>Defines a paragraph of text.</p>
+                        <pre><code>&lt;p&gt;This is a paragraph of text.&lt;/p&gt;</code></pre>
+                    </div>
+                    
+                    <!-- Anchor/link tag card -->
+                    <div class="tag-card">
+                        <div class="tag-name">&lt;a&gt;</div>
+                        <p>Creates a hyperlink to another webpage or resource.</p>
+                        <pre><code>&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;</code></pre>
+                    </div>
+                    
+                    <!-- Image tag card -->
+                    <div class="tag-card">
+                        <div class="tag-name">&lt;img&gt;</div>
+                        <p>Embeds an image in the HTML document.</p>
+                        <pre><code>&lt;img src="image.jpg" alt="Description of image"&gt;</code></pre>
+                    </div>
+                    
+                    <!-- List tags card -->
+                    <div class="tag-card">
+                        <div class="tag-name">&lt;ul&gt; and &lt;ol&gt;</div>
+                        <p>Create unordered (bullet) and ordered (numbered) lists.</p>
+                        <pre><code>&lt;ul&gt;
+    &lt;li&gt;Unordered list item 1&lt;/li&gt;
+    &lt;li&gt;Unordered list item 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Ordered list item 1&lt;/li&gt;
+    &lt;li&gt;Ordered list item 2&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                    </div>
+                    
+                    <!-- Division tag card -->
+                    <div class="tag-card">
+                        <div class="tag-name">&lt;div&gt;</div>
+                        <p>A generic container for grouping content. Used extensively for layout and styling.</p>
+                        <pre><code>&lt;div class="container"&gt;
+    &lt;!-- Content goes here --&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                    
+                    <!-- Span tag card -->
+                    <div class="tag-card">
+                        <div class="tag-name">&lt;span&gt;</div>
+                        <p>An inline container for text and other inline elements.</p>
+                        <pre><code>&lt;p&gt;This is &lt;span class="highlight"&gt;important&lt;/span&gt; text.&lt;/p&gt;</code></pre>
+                    </div>
+                    
+                    <!-- Form tag card -->
+                    <div class="tag-card">
+                        <div class="tag-name">&lt;form&gt;</div>
+                        <p>Creates an HTML form for user input.</p>
+                        <pre><code>&lt;form action="/submit" method="post"&gt;
+    &lt;input type="text" name="username"&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+                    </div>
+                    
+                    <!-- Table tag card -->
+                    <div class="tag-card">
+                        <div class="tag-name">&lt;table&gt;</div>
+                        <p>Creates a table to display data in rows and columns.</p>
+                        <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Row 1, Cell 1&lt;/td&gt;
+        &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                    </div>
+                    
+                    <!-- Preformatted text and code tag card -->
+                    <div class="tag-card">
+                        <div class="tag-name">&lt;pre&gt; and &lt;code&gt;</div>
+                        <p>Used for displaying preformatted text and code snippets.</p>
+                        <pre><code>&lt;pre&gt;
+    &lt;code&gt;
+    function greet() {
+        console.log("Hello, world!");
+    }
+    &lt;/code&gt;
+&lt;/pre&gt;</code></pre>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- CSS Basics Section -->
+            <section id="css-basics">
+                <h2>CSS Basics</h2>
+                <p>CSS (Cascading Style Sheets) is used to style HTML elements. CSS can be applied inline, in the head section, or preferably in an external stylesheet.</p>
+                
+                <h3>CSS Syntax</h3>
+                <!-- Example of basic CSS syntax -->
+                <pre><code>selector {
+    property: value;
+    another-property: value;
+}</code></pre>
+                
+                <h4>Types of Selectors</h4>
+                <!-- Examples of different CSS selector types -->
+                <pre><code>/* Element selector */
+p {
+    color: blue;
+}
+
+/* Class selector */
+.highlight {
+    background-color: yellow;
+}
+
+/* ID selector */
+#header {
+    font-size: 24px;
+}
+
+/* Descendant selector */
+nav a {
+    text-decoration: none;
+}</code></pre>
+            </section>
+            
+            <!-- CSS Properties Section -->
+            <section id="css-properties">
+                <h2>CSS Properties</h2>
+                <p>CSS properties define how HTML elements should be displayed. Here are some essential CSS properties:</p>
+                
+                <!-- Grid container for CSS property cards -->
+                <div class="property-container">
+                    <!-- Color property card -->
+                    <div class="property-card">
+                        <div class="property-name">color</div>
+                        <p>Sets the color of text.</p>
+                        <pre><code>p {
+    color: #333333;
+    /* Can use color names, hex, rgb, rgba */
+}</code></pre>
+                    </div>
+                    
+                    <!-- Background-color property card -->
+                    <div class="property-card">
+                        <div class="property-name">background-color</div>
+                        <p>Sets the background color of an element.</p>
+                        <pre><code>.card {
+    background-color: #f5f5f5;
+}</code></pre>
+                    </div>
+                    
+                    <!-- Font-family property card -->
+                    <div class="property-card">
+                        <div class="property-name">font-family</div>
+                        <p>Specifies the font for text.</p>
+                        <pre><code>body {
+    font-family: 'Arial', sans-serif;
+}</code></pre>
+                    </div>
+                    
+                    <!-- Font-size property card -->
+                    <div class="property-card">
+                        <div class="property-name">font-size</div>
+                        <p>Sets the size of the font.</p>
+                        <pre><code>h1 {
+    font-size: 2rem; /* Can use px, em, rem, % */
+}</code></pre>
+                    </div>
+                    
+                    <!-- Margin and padding property card -->
+                    <div class="property-card">
+                        <div class="property-name">margin & padding</div>
+                        <p>Controls spacing around and within elements.</p>
+                        <pre><code>.box {
+    margin: 10px; /* Space outside the element */
+    padding: 20px; /* Space inside the element */
+    
+    /* Can set individual sides */
+    margin-top: 15px;
+    padding-left: 25px;
+}</code></pre>
+                    </div>
+                    
+                    <!-- Display property card -->
+                    <div class="property-card">
+                        <div class="property-name">display</div>
+                        <p>Defines how an element is displayed.</p>
+                        <pre><code>.container {
+    display: flex; /* Options: block, inline, flex, grid, none */
+}</code></pre>
+                    </div>
+                    
+                    <!-- Border property card -->
+                    <div class="property-card">
+                        <div class="property-name">border</div>
+                        <p>Adds a border around an element.</p>
+                        <pre><code>.frame {
+    border: 1px solid #000;
+    
+    /* Can set individual properties */
+    border-width: 2px;
+    border-style: dashed;
+    border-color: #333;
+}</code></pre>
+                    </div>
+                    
+                    <!-- Text-align property card -->
+                    <div class="property-card">
+                        <div class="property-name">text-align</div>
+                        <p>Controls the horizontal alignment of text.</p>
+                        <pre><code>.center-text {
+    text-align: center; /* Options: left, right, center, justify */
+}</code></pre>
+                    </div>
+                    
+                    <!-- Width and height property card -->
+                    <div class="property-card">
+                        <div class="property-name">width & height</div>
+                        <p>Sets the dimensions of an element.</p>
+                        <pre><code>.box {
+    width: 300px;
+    height: 200px;
+    
+    /* Can use percentages or other units */
+    width: 50%;
+    max-width: 600px;
+}</code></pre>
+                    </div>
+                    
+                    <!-- Position property card -->
+                    <div class="property-card">
+                        <div class="property-name">position</div>
+                        <p>Specifies the positioning method for an element.</p>
+                        <pre><code>.overlay {
+    position: absolute; /* Options: static, relative, absolute, fixed, sticky */
+    top: 0;
+    left: 0;
+}</code></pre>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Page footer -->
+        <footer>
+            <p>&copy; HTML & CSS Quick Reference Guide 2025</p>
+        </footer>
+    </div>
+    <!-- End of container -->
+</body>
+</html>
