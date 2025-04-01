@@ -1,115 +1,116 @@
-/* 
-   Main Stylesheet for Chef Meowsey's Recipe Page
-   Uses a warm, food-friendly color scheme
-*/
-
-/* Base body styles */
+/* ==================== */
+/* GLOBAL STYLES */
+/* ==================== */
 body {
-    font-family: 'Poppins', sans-serif; /* Modern, readable font */
-    background-color: #fff8dc; /* Light cream background */
-    text-align: center; /* Center-aligned content */
-    padding: 20px; /* Padding for breathing room */
-    color: #444; /* Dark gray text for readability */
-    position: relative; /* Positioning context for absolute children */
+    font-family: 'Poppins', sans-serif; 
+    background-color: #fff8dc; 
+    text-align: center;
+    padding: 20px;
+    color: #444;
+    position: relative;
 }
 
-/* Header styling */
+/* ==================== */
+/* HEADER STYLES */
+/* ==================== */
 header {
-    background-color: #ffcc00; /* Vibrant yellow header */
-    padding: 20px; /* Internal spacing */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    position: relative; /* Positioning context */
-    margin-top: 20px; /* Spacing from top */
+    background-color: #ffcc00; 
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    position: relative;
+    margin-top: 20px;
 }
 
-/* Header image styling */
 header img {
-    width: 150px; /* Fixed width */
-    border-radius: 50%; /* Circular image */
-    margin-bottom: 10px; /* Spacing below image */
-    border: 3px solid #fff; /* White border */
+    width: 150px;
+    border-radius: 50%; 
+    margin-bottom: 10px;
+    border: 3px solid #fff; 
 }
 
-/* Main heading style */
 h1 {
-    font-size: 32px; /* Large, prominent size */
-    color: #333; /* Dark text for contrast */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+    font-size: 32px;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* Paragraph styling */
 p {
-    font-size: 18px; /* Readable size */
-    font-style: italic; /* Stylistic emphasis */
+    font-size: 18px;
+    font-style: italic; 
 }
 
-/* Content section styling */
+/* ==================== */
+/* SECTION STYLES */
+/* ==================== */
 section {
-    background-color: white; /* Clean white background */
-    padding: 20px; /* Internal spacing */
-    margin: 20px auto; /* Centered with vertical spacing */
-    width: 70%; /* Reasonable width for readability */
-    border-radius: 10px; /* Softened corners */
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    position: relative; /* For absolute positioning context */
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
 }
 
-/* Section heading style */
 h2 {
-    font-size: 24px; /* Slightly smaller than h1 */
-    color: #ff6600; /* Orange color for visual hierarchy */
-    text-decoration: underline; /* Stylistic underline */
+    font-size: 24px;
+    color: #ff6600;
+    text-decoration: underline;
 }
 
-/* List container styling */
 ul, ol {
-    text-align: left; /* Left-aligned text for readability */
-    display: inline-block; /* Natural width for content */
-    font-size: 18px; /* Readable size */
-    margin-top: 10px; /* Spacing from heading */
+    text-align: left;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 10px;
 }
 
-/* List item styling */
 ul li, ol li {
-    margin-bottom: 8px; /* Vertical spacing between items */
+    margin-bottom: 8px;
 }
 
-/* Side image styling */
+/* ==================== */
+/* IMAGE STYLES */
+/* ==================== */
 .side-image {
-    width: 250px; /* Fixed width */
-    position: absolute; /* Absolute positioning */
-    top: 50%; /* Vertical centering */
-    transform: translateY(-50%); /* Precise vertical alignment */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    width: 250px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-/* Left image positioning */
 .left-image {
-    left: -220px; /* Positioned to the left of content */
+    left: 10px;
+    top: 52%;
 }
 
-/* Right image positioning */
 .right-image {
-    right: -220px; /* Positioned to the right of content */
-}
+    right: 10px;
+    top: 93%;
+} 
 
-/* Footer styling */
+/* ==================== */
+/* FOOTER STYLES */
+/* ==================== */
 footer {
-    margin-top: 30px; /* Spacing from content */
-    font-size: 14px; /* Smaller text size */
-    color: #666; /* Subdued text color */
-    padding: 10px; /* Internal spacing */
-    background-color: #ffcc00; /* Matches header color */
-    border-radius: 10px; /* Rounded corners */
+    margin-top: 30px;
+    font-size: 14px;
+    color: #666;
+    padding: 10px;
+    background-color: #ffcc00;
+    border-radius: 10px;
 }
 
-/* Decorative line styling */
+/* ==================== */
+/* DECORATIVE ELEMENTS */
+/* ==================== */
 .decorative-line {
-    width: 50px; /* Fixed width */
-    height: 5px; /* Fixed height */
-    background-color: #ff6600; /* Orange color */
-    margin: 10px auto; /* Centered with vertical spacing */
-    border-radius: 3px; /* Slightly rounded ends */
+    width: 50px;
+    height: 5px;
+    background-color: #ff6600;
+    margin: 10px auto;
+    border-radius: 3px;
 }
