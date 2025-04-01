@@ -937,8 +937,6 @@ cite {
     .cast-list {
         grid-template-columns: 1fr;
     }
-    
-    /* gallery class removed - not used anywhere */
 }
 
 @media (max-width: 480px) {
