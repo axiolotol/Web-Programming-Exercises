@@ -1,100 +1,145 @@
+/* Base styles for the document body */
 body {
     font-family: Arial, sans-serif;
     font-weight: 400;
     margin: 0;
-    background-color: #17072b;
+    background-color: #17072b; /* Dark purple background */
 }
 
+/* Main container that wraps all page content */
 .main-container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1980px;
+    margin: 0 auto; /* Center the container */
     background-color: white;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Stack children vertically */
 }
 
+/* Header section styling with navigation */
 .header-nav {
-    background-color: #17072b;
+    background-color: #17072b; /* Dark purple background */
     color: white;
-    padding: 20px;
+    padding: 8px; /* Compact padding */
 }
 
+/* Main title styling */
 .header-nav h1 {
     font-family: Tahoma, sans-serif;
     font-weight: 700;
     text-decoration: underline;
-    font-size: xx-large;
+    font-size: large; /* Smaller font for vertical compactness */
     text-align: center;
-    margin-bottom: 20px;
+    margin: 5px 0; /* Minimal margins */
 }
 
+/* Navigation menu styling */
 nav {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: center; /* Center navigation links */
+    gap: 12px; /* Space between navigation items */
 }
 
+/* Navigation link styling */
 nav a {
     color: white;
     text-decoration: none;
+    font-size: 0.9em; /* Slightly smaller font */
 }
 
+/* Main content area styling */
 main {
-    display: flex;
-    margin: 2%;
+    display: flex; /* Create two-column layout */
+    margin: 0.5%; /* Very small margin */
+    height: 450px; /* Fixed height for vertical compactness */
 }
 
+/* Common styles for both main content columns */
 .welcome, .line-up {
-    padding: 2%;
+    padding: 0.8%; /* Compact padding */
 }
 
+/* Left column styling (Welcome section) */
 .welcome {
-    flex: 2;
+    flex: 2; /* Takes twice as much space as line-up */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
 }
 
+/* Welcome paragraph styling */
+.welcome p {
+    margin: 5px 0;
+    line-height: 1.2; /* Compact line height */
+}
+
+/* Right column styling (Line-up section) */
 .line-up {
-    flex: 1;
-    background-color: #172d67;
+    flex: 1; /* Takes half as much space as welcome section */
+    background-color: #172d67; /* Dark blue background */
     color: white;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
 }
 
+/* Heading styles for both main sections */
 .welcome h2, .line-up h2 {
     font-family: Tahoma, sans-serif;
     font-weight: 700;
     text-decoration: underline;
-    font-size: xx-large;
+    font-size: large; /* Smaller font for vertical compactness */
+    margin: 3px 0; /* Minimal margins */
 }
 
+/* Container for the main image */
+.welcome-image {
+    flex-grow: 1; /* Fill remaining space */
+    overflow: hidden; /* Prevent image overflow */
+}
+
+/* Main image styling */
 .welcome-image img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 100%; /* Fill the container completely */
+    object-fit: cover; /* Maintain aspect ratio while filling */
 }
 
+/* List styling in line-up section */
 .line-up ul {
-    list-style-type: none; 
-    padding-left: 0; 
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0; /* Remove default padding */
+    margin: 5px 0; /* Minimal margins */
 }
 
+/* List item styling */
+.line-up li {
+    line-height: 1.2; /* Compact line height */
+    margin: 3px 0; /* Minimal margins between items */
+}
+
+/* Custom bullet points for list items */
 .line-up li::before {
-    content: "- "; 
+    content: "- "; /* Add dash as custom bullet */
 }
 
+/* Container for the two images in line-up section */
 .line-up-images {
     display: flex;
-    gap: 10px;
-    margin-top: 10px;
+    gap: 3px; /* Minimal gap between images */
+    margin-top: auto; /* Push to bottom of container */
+    flex-grow: 1; /* Take remaining vertical space */
 }
 
+/* Image styling in line-up section */
 .line-up-images img {
-    width: calc(50% - 5px);
-    height: 200px;
-    object-fit: cover;
+    width: calc(50% - 3px); /* Each image takes half the width minus gap */
+    height: auto; /* Height determined by container */
+    object-fit: cover; 
 }
 
+/* Footer styling */
 footer {
-    background-color: #8c15e9;
+    background-color: #8c15e9; /* Bright purple background */
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 3px; /* Minimal padding */
+    font-size: 0.8em; /* Smaller font */
 }

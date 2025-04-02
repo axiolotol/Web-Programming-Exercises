@@ -70,9 +70,9 @@ code{
     transition: filter 0.3s ease;
 }
 
-/* First car image (Nissan Skyline) - Blur filter */
+/* First car image (Nissan Skyline) - Invert filter */
 .car-item:nth-child(1) img:hover {
-    filter: invert(100%); /* Invert effect */
+    filter: invert(100%); /* Inverted colours effect */
 }
 
 /* Second car image (Toyota Supra) - Sepia filter */
