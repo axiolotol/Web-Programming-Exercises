@@ -1,29 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character encoding declaration for the document -->
     <meta charset="UTF-8">
-    <title>YouTube Video with Custom Poster</title>
+    <!-- Title that appears in the browser tab -->
+    <title>Cat Gangnam Style Video</title>
+    <!-- Link to external CSS file for styling -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="video-container">
-        <!-- YouTube iframe with parameters for looping -->
-        <iframe 
-            class="youtube-video"
-            width="560" 
-            height="315" 
-            src="https://www.youtube.com/embed/Cn-ywvP8roI?si=rGO1XX-9CwImt2SL&autoplay=1&loop=1&playlist=Cn-ywvP8roI&controls=1" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen
-        ></iframe>
+    <!-- YouTube-style layout container -->
+    <div class="youtube-layout">
+        <!-- Video container (centered, with poster and loop) -->
+        <div class="video-container">
+            <!-- HTML5 video element 
+                 - src: specifies the video file to play
+                 - poster: displays image before video plays
+                 - loop: makes the video repeat continuously
+                 - controls: adds video controls like YouTube
+            -->
+            <video
+                class="local-video"
+                src="OIIA Cat x Gangnam Style.mp4" 
+                poster="oiia.png"
+                loop
+                controls>
+            </video>
+        </div>
         
-        <!-- Custom poster image overlay -->
-        <div class="poster-overlay">
-            <!-- Replace with your actual poster image -->
-            <img src="oiia.png" alt="Video poster image" class="poster-image">
+        <!-- YouTube-like video title and info section -->
+        <div class="video-info">
+            <h1 class="video-title">OIIA Cat x Gangnam Style</h1>
+            <div class="video-meta">
+                <span>12,345 views • March 21, 2025</span>
+                <span>Amber Carino</span>
+            </div>
+        </div>
+
+        <!-- YouTube-like action buttons -->
+        <div class="video-actions">
+            <div class="action-button">
+                <div class="action-icon"></div>
+                Like
+            </div>
+            <div class="action-button">
+                <div class="action-icon"></div>
+                Dislike
+            </div>
+            <div class="action-button">
+                <div class="action-icon"></div>
+                Share
+            </div>
+            <div class="action-button">
+                <div class="action-icon"></div>
+                Save
+            </div>
         </div>
     </div>
 </body>
